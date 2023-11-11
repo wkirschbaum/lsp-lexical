@@ -62,8 +62,7 @@ be available here: https://github.com/lexical-lsp/lexical/releases/."
  `(:download :url lsp-lexical-download-url
              :decompress :zip
              :store-path ,(f-join lsp-server-install-dir "lexical" "lexical.zip")
-             :binary-path ,(f-join lsp-server-install-dir
-                                   "lexical" "lexical" "bin" "start_lexical.sh")
+             :binary-path lsp-lexical-binary-path
              :set-executable? t))
 
 (lsp-register-client
