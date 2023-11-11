@@ -14,3 +14,13 @@
   :config
   (load "~/[path to repo]/lsp-lexical.el"))
 ```
+
+Install the server by running `M-x lsp-install-server` and choose
+`lexical`.
+
+To update the lexical server version you can run `M-x customize-group`
+and select `lsp-lexical`.  After updating the version ensure to re-run
+the server installation command.
+
+It is also possible to set the binary path or the download link via the
+customization group.
